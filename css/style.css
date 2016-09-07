@@ -1,4 +1,4 @@
-    /*----------start our framework----------*/
+    /*----------start our framework for mobile size----------*/
 
     * {
         box-sizing: border-box;
@@ -510,6 +510,9 @@
         }
         .alohaLogo {
             margin-left: -15px;
+        }
+        .counter {
+            left: 0em;
         }
         /*---------- start featured section /tablet/----------*/
         .largImg {
