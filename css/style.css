@@ -1,522 +1,507 @@
     /*----------start our framework----------*/
 
-* {
-    box-sizing: border-box;
-    clear: both;
-    list-style: none;
-    text-decoration: none;
-    box-shadow: none;
-    border: none;
-}
-
-.headContainer {
-    width: 90%;
-    margin: 20px auto;
-    border-bottom: .3px solid;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.prouductContainer {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-.contentContainer {
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.footerContainer {
-    width: 90%;
-    margin: 0 auto;
-}
-
-
-/*---------- font style & decoration----------*/
-
-.wrap span {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.upper {
-    text-transform: uppercase;
-}
-
-.capitalize {
-    text-transform: capitalize;
-}
-
-.heavy {
-    font-family: 'Playfair_Display' serif;
-    font-style: normal;
-    font-weight: bold;
-}
-
-h2 {
-    font-family: 'Playfair_Display', serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 2.2em;
-    line-height: 1;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.6em;
-    font-weight: lighter;
-}
-
-h3 a {
-    color: white;
-}
-
-h3 a:hover {
-    color: #f5ebc6;
-}
-
-h4 a {
-    font-family: 'Playfair_Display', serif;
-    font-weight: lighter;
-    font-size: 1.5rem;
-    line-height: 0;
-    color: #e2574c;
-    margin-bottom: 1rem;
-}
-
-.navContainer li a {
-    color: #e2574c;
-    font-family: 'raleway', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.navContainer a:hover {
-    color: #b64036;
-}
-
-.parag1 {
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-    position: relative;
-    top: 27px;
-}
-
-.parag2 {
-    color: #fff;
-    font-size: 2.7rem;
-    font-family: 'Playfair_Display', sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-    position: relative;
-    top: 6px;
-    letter-spacing: -2px;
-    line-height: 1;
-}
-
-.description {
-    font-family: 'raleway' sans-serif;
-    font-weight: lighter;
-    font-size: 1.18rem;
-    text-align: center;
-    line-height: 2rem;
-}
-
-.price {
-    font-family: 'Playfair_Display', sans-serif;
-    font-size: 1.1rem;
-    color: #969696;
-    font-weight: lighter;
-    line-height: 0;
-}
-
-.title {
-    font-family: 'Playfair_Display', sans-serif;
-    font-size: 0.75rem;
-    line-height: 0;
-    color: #969696;
-}
-
-.product-slider button {
-    color: #fff;
-    background-color: #b64036;
-}
-
-input {
-    font-family: 'raleway', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1rem;
-}
-
-input[type="submit"]:hover {
-    color: #fff;
-    background-color: #b64036;
-}
-
-footer {
-    font-family: 'Playfair_Display', sans-serif;
-    color: #fff;
-}
-
-.contact-info p {
-    margin-bottom: 15px;
-    line-height: 21px;
-    margin-top: 20px;
-}
-
-.contact a {
-    color: white;
-}
-
-.contact a:hover {
-    color: #b64036
-}
-
-.address {
-    color: #969696;
-}
-
-.network-name a {
-    font-family: 'raleway' sans-serif;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.social a {
-    color: white;
-}
-
-.social a:hover {
-    color: #b64036
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------for desktop size----------*/
-
-body {
-    width: 100%;
-    color: #2d2d2d;
-    margin: 0 auto;
-    font-family: 'raleway' sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    background-color: #fff;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------start ther header----------*/
-
-.siteHeader {
-    width: 100%;
-    height: 110px;
-    background-color: white;
-    display: flex;
-    padding: 0px 0px 4px;
-    flex-wrap: wrap;
-    box-shadow: 0 1px 2px 0 #ccc;
-}
-
-.alohaLogo {
-    height: 48px;
-    flex: 0 0 19%;
-}
-
-.cartIcon {
-    position: relative;
-    width: 60px;
-    height: auto;
-    padding: 2px 9px 0px 0px;
-}
-
-.navContainer ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navContainer li {
-    display: inline-flex;
-    right: 22px;
-    bottom: 39px;
-    position: relative;
-    padding: 10px;
-}
-
-.counter {
-    position: relative;
-    display: none;
-    border-radius: 50%;
-    color: #f9f7f7;
-    top: -3em;
-    left: -2em;
-    padding: 5px;
-    background: #e2574c;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------start banner section----------*/
-
-.bannerContainer {
-    background: linear-gradient(rgba(13, 0, 11, 0.3), rgba(42, 0, 11, 0.3)), url(../images/banner-girl.png) no-repeat center 40px, url(../images/flower-bkgd.jpg) center repeat-x;
-    background-size: cover, auto 375px, auto 385px;
-    position: relative;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    height: 385px;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------start featured section----------*/
-
-.about {
-    height: 215px;
-}
-
-.mens {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/mens-category.jpg') no-repeat center center;
-    background-size: cover, cover;
-}
-
-.trends {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/trends-category.jpg') no-repeat;
-    background-size: cover, cover;
-}
-
-.glasses {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../images/glasses-category.jpg") no-repeat;
-    background-size: cover, cover;
-}
-
-.sale {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/sale-category.jpg') no-repeat;
-    background-size: cover, cover;
-}
-
-.bags {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/back.jpg') no-repeat center center;
-    background-size: cover, cover;
-}
-
-.womens {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/womens-category.jpg') no-repeat center center;
-    background-size: cover, cover;
-}
-
-.largImg, .smallImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px white solid;
-}
-
-.largImg {
-    width: 100%;
-    height: 50vw;
-    flex: 1 0 100%;
-    border-left-style: none;
-    border-right-style: none;
-}
-
-.smallImg {
-    height: 50vw;
-    width: 45%;
-    flex: 2 0 50%;
-}
-
-.glasses {
-    border-right-style: none;
-}
-
-.sale {
-    border-left-style: none;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------start product section----------*/
-
-.mostLovedProducts {
-    width: 100%;
-    margin-top: 65px;
-    margin-bottom: 65px;
-    text-align: center;
-}
-
-.product-slider li {
-    width: 100%;
-}
-
-.product-slider button {
-    background: #e2574c;
-    border: 2px sold;
-    border-radius: 2em;
-    color: #fff;
-    padding: 5px;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------start regester section----------*/
-
-.regester {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url('../images/wave-bkgd.jpg') no-repeat center bottom;
-    text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
-    height: 345px;
-    color: #fff;
-}
-
-.singnUp {
-    position: relative;
-    top: 37px;
-}
-
-form {
-    background-color: #fff;
-    padding: 4px 4px 4px 30px;
-    width: 325px;
-    height: 45px;
-    display: flex;
-    border-radius: 35px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-input[type="email"] {
-    border: none;
-    width: 225px;
-    size: 35;
-}
-
-input[type="submit"] {
-    border: none;
-    background: #e2574c;
-    border-radius: 35px;
-    width: 120px;
-    color: #fff;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------start footer section----------*/
-
-.siteFooter {
-    background-color: #242424;
-    height: 289px;
-    margin-top: 8px;
-    text-align: center;
-}
-
-.liftFooter {
-    position: relative;
-    top: 50px;
-    line-height: 1;
-}
-
-.rightFootr ul {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    right: 13px;
-    top: 55px;
-}
-
-.social a {
-    padding: 7px;
-}
-
-.social span {
-    display: none;
-}
-
-
-/*/////////////////////////////////////////////////*/
-
-
-/*----------First break point at a width of 600px----------*/
-
-@media screen and (min-width: 600px) {
-    /*---------- font & description ----------*/
-    h3 a {
-        font-size: 1.04em;
+    * {
+        box-sizing: border-box;
+        clear: both;
+        list-style: none;
+        text-decoration: none;
+        box-shadow: none;
+        border: none;
     }
-    h4 a {
-        font-size: 1.3rem;
-    }
+
     .headContainer {
         width: 90%;
+        margin: 20px auto;
+        border-bottom: .3px solid;
         display: flex;
-        border: none;
         justify-content: space-between;
     }
+
     .navContainer {
-        position: relative;
-        left: 2px;
-        width: 40%;
-        justify-content: space-between;
-        margin: 0px auto;
-        bottom: 43px;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
+
+    .prouductContainer {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
     .contentContainer {
-        padding: 30px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
     }
+
+    .footerContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /*---------- font style & decoration----------*/
+
+    .wrap span {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .upper {
+        text-transform: uppercase;
+    }
+
+    .capitalize {
+        text-transform: capitalize;
+    }
+
+    .heavy {
+        font-family: 'Playfair_Display' serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: 'Playfair_Display', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 2.2em;
+        line-height: 1;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.6em;
+        font-weight: lighter;
+    }
+
+    h3 a {
+        color: white;
+    }
+
+    h3 a:hover {
+        color: #f5ebc6;
+    }
+
+    h4 a {
+        font-family: 'Playfair_Display', serif;
+        font-weight: lighter;
+        font-size: 1.5rem;
+        line-height: 0;
+        color: #e2574c;
+        margin-bottom: 1rem;
+    }
+
+    .navContainer li a {
+        color: #e2574c;
+        font-family: 'raleway', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .navContainer a:hover {
+        color: #b64036;
+    }
+
     .parag1 {
+        color: #fff;
         font-size: 1.3rem;
-        top: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+        position: relative;
+        top: 27px;
     }
+
     .parag2 {
-        font-size: 3rem;
-        top: -4px;
+        color: #fff;
+        font-size: 2.7rem;
+        font-family: 'Playfair_Display', sans-serif;
+        font-style: normal;
+        font-weight: lighter;
+        text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+        position: relative;
+        top: 6px;
+        letter-spacing: -2px;
+        line-height: 1;
     }
+
     .description {
-        font-size: 1.2rem;
-        line-height: 2;
+        font-family: 'raleway' sans-serif;
+        font-weight: lighter;
+        font-size: 1.18rem;
+        text-align: center;
+        line-height: 2rem;
     }
-    /*---------- start header section ----------*/
+
+    .price {
+        font-family: 'Playfair_Display', sans-serif;
+        font-size: 1.1rem;
+        color: #969696;
+        font-weight: lighter;
+        line-height: 0;
+    }
+
+    .title {
+        font-family: 'Playfair_Display', sans-serif;
+        font-size: 0.75rem;
+        line-height: 0;
+        color: #969696;
+    }
+
+    .product-slider button {
+        color: #fff;
+        background-color: #b64036;
+    }
+
+    input {
+        font-family: 'raleway', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1rem;
+    }
+
+    input[type="submit"]:hover {
+        color: #fff;
+        background-color: #b64036;
+    }
+
+    footer {
+        font-family: 'Playfair_Display', sans-serif;
+        color: #fff;
+    }
+
+    .contact-info p {
+        margin-bottom: 15px;
+        line-height: 21px;
+        margin-top: 20px;
+    }
+
+    .contact a {
+        color: white;
+    }
+
+    .contact a:hover {
+        color: #b64036
+    }
+
+    .address {
+        color: #969696;
+    }
+
+    .network-name a {
+        font-family: 'raleway' sans-serif;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .social a {
+        color: white;
+    }
+
+    .social a:hover {
+        color: #b64036
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------for mobile size----------*/
+
+    body {
+        max-width: 100%;
+        height: auto;
+        color: #2d2d2d;
+        margin: 0 auto;
+        font-family: 'raleway' sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        background-color: #fff;
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------start ther header----------*/
+
+    .siteHeader {
+        width: 100%;
+        height: 110px;
+        background-color: white;
+        display: flex;
+        padding: 0px 0px 4px;
+        flex-wrap: wrap;
+        box-shadow: 0 1px 2px 0 #ccc;
+    }
+
+    .alohaLogo {
+        height: 48px;
+        flex: 0 0 19%;
+    }
+
+    .cartIcon {
+        position: relative;
+        width: 60px;
+        height: auto;
+        padding: 2px 9px 0px 0px;
+    }
+
+    .navContainer ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navContainer li {
+        display: inline-flex;
+        right: 22px;
+        bottom: 39px;
+        position: relative;
+        padding: 10px;
+    }
+
+    .counter {
+        position: relative;
+        display: none;
+        border-radius: 50%;
+        color: #f9f7f7;
+        top: -3em;
+        left: -2em;
+        padding: 5px;
+        background: #e2574c;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------start banner section----------*/
+
     .bannerContainer {
         background: linear-gradient(rgba(13, 0, 11, 0.3), rgba(42, 0, 11, 0.3)), url(../images/banner-girl.png) no-repeat center 40px, url(../images/flower-bkgd.jpg) center repeat-x;
-        background-size: cover, auto 390px, auto 400px;
+        background-size: cover, auto 375px, auto 385px;
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 385px;
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------start featured section----------*/
+
+    .about {
+        height: 215px;
+    }
+
+    .mens {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/mens-category.jpg') no-repeat center center;
+        background-size: cover, cover;
+    }
+
+    .trends {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/trends-category.jpg') no-repeat;
+        background-size: cover, cover;
+    }
+
+    .glasses {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../images/glasses-category.jpg") no-repeat;
+        background-size: cover, cover;
+    }
+
+    .sale {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/sale-category.jpg') no-repeat;
+        background-size: cover, cover;
+    }
+
+    .bags {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/back.jpg') no-repeat center center;
+        background-size: cover, cover;
+    }
+
+    .womens {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/womens-category.jpg') no-repeat center center;
+        background-size: cover, cover;
+    }
+
+    .largImg, .smallImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px white solid;
+    }
+
+    .largImg {
+        width: 100%;
+        height: 50vw;
+        flex: 1 0 100%;
+        border-left-style: none;
+        border-right-style: none;
+    }
+
+    .smallImg {
+        height: 50vw;
+        width: 45%;
+        flex: 2 0 50%;
+    }
+
+    .glasses {
+        border-right-style: none;
+    }
+
+    .sale {
+        border-left-style: none;
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------start product section----------*/
+
+    .mostLovedProducts {
+        width: 100%;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        text-align: center;
+    }
+
+    .product-slider li {
+        width: 100%;
+    }
+
+    .product-slider button {
+        background: #e2574c;
+        border: 2px sold;
+        border-radius: 2em;
+        color: #fff;
+        padding: 5px;
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------start regester section----------*/
+
+    .regester {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url('../images/wave-bkgd.jpg') no-repeat center bottom;
+        text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
+        height: 345px;
+        color: #fff;
+    }
+
+    .singnUp {
+        position: relative;
+        top: 37px;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 4px 4px 4px 30px;
+        width: 325px;
+        height: 45px;
+        display: flex;
+        border-radius: 35px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    input[type="email"] {
+        border: none;
+        width: 225px;
+        size: 35;
+    }
+
+    input[type="submit"] {
+        border: none;
+        background: #e2574c;
+        border-radius: 35px;
+        width: 120px;
+        color: #fff;
+    }
+    /*.radial-pulse {
+  animation: pulse 1s 1;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}*/
+    /*/////////////////////////////////////////////////*/
+    /*----------start footer section----------*/
+
+    .siteFooter {
+        background-color: #242424;
+        height: 289px;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .liftFooter {
+        position: relative;
+        top: 50px;
+        line-height: 1;
+    }
+
+    .rightFootr ul {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 13px;
+        top: 55px;
+    }
+
+    .social a {
+        padding: 7px;
+    }
+
+    .social span {
+        display: none;
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------First break point at a width of 600px----------*/
+
+    @media screen and (min-width: 600px) {
+        /*---------- second framework for tablet size ------------*/
+        .headContainer {
+            width: 90%;
+            display: flex;
+            border: none;
+            justify-content: space-between;
+        }
+        .navContainer {
+            position: relative;
+            right: 15px;
+            width: 40%;
+            justify-content: space-between;
+            margin: 0px auto;
+            bottom: 43px;
+        }
+        .contentContainer {
+            padding: 30px;
+        }
+        .footerContainer {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+        /*---------- font & decoration/tablet/ ----------*/
+        h3 a {
+            font-size: 1.04em;
+        }
+        h4 a {
+            font-size: 1.3rem;
+        }
+        .parag1 {
+            font-size: 1.3rem;
+            top: 13px;
+        }
+        .parag2 {
+            font-size: 3rem;
+            top: -4px;
+        }
+        .description {
+            font-size: 1.2rem;
+            line-height: 2;
+        }
+        /*---------- start header section /tablet/ ----------*/
+        .bannerContainer {
+            background: linear-gradient(rgba(13, 0, 11, 0.3), rgba(42, 0, 11, 0.3)), url(../images/banner-girl.png) no-repeat center 40px, url(../images/flower-bkgd.jpg) center repeat-x;
+            background-size: cover, auto 390px, auto 400px;
+        }
         .siteHeader {
             height: 83px;
         }
@@ -526,7 +511,7 @@ input[type="submit"] {
         .alohaLogo {
             margin-left: -15px;
         }
-        /*---------- start featured section ----------*/
+        /*---------- start featured section /tablet/----------*/
         .largImg {
             width: 50%;
             height: 25vw;
@@ -537,25 +522,21 @@ input[type="submit"] {
             width: 45%;
             flex: 2 0 25%;
         }
-        /*---------- start product section ----------*/
+        /*---------- start product section /tablet/----------*/
         .mostLovedProducts {
             margin-bottom: 5em;
         }
         .product-slider li {
             width: 50%;
         }
+        .flickity-page-dots .dot {
+            margin: -50px 8px;
+        }
         img {
             height: auto;
             max-width: 100%;
         }
-        .flickity-viewport {
-            right: 25px !important;
-        }
-        .flickity-page-dots {
-            right: 2px !important;
-            bottom: -5 !important;
-        }
-        /*---------- start regester section ----------*/
+        /*---------- start regester section /tablet/ ----------*/
         .regester {
             height: 380px;
         }
@@ -566,11 +547,7 @@ input[type="submit"] {
             padding: 4px 4px 4px 30px;
             width: 360px;
         }
-        /*---------- start footer section ----------*/
-        .footerContainer {
-            display: inline-flex;
-            justify-content: space-between;
-        }
+        /*---------- start footer section /tablet/----------*/
         .siteFooter {
             display: flex;
             height: 290px;
@@ -585,12 +562,61 @@ input[type="submit"] {
             justify-content: space-between;
         }
         .social {
-            width: 145px;
+            max-width: 150px;
             display: flex;
             flex-wrap: wrap;
             align-content: space-around;
         }
         .social span {
             display: inline-flex;
+        }
+    }
+    /*/////////////////////////////////////////////////*/
+    /*----------second break point at a width of 600px----------*/
+
+    @media screen and (min-width: 1240px) {
+        /*---------- font & decoration /labtob/ ------------*/
+        h3 a {
+            font-size: 1.5em;
+        }
+        /*---------- third framework for /labtob/ size ------------*/
+        .navContainer {
+            left: 17px;
+            width: 33%;
+        }
+        .contentContainer {
+            margin: 5px auto;
+            width: 90%
+        }
+        /*---------- header section /labtob/------------*/
+        .siteHeader {
+            margin: 8px;
+        }
+        .alohaLogo {
+            height: 60px;
+            flex: 0 0 14%;
+        }
+        .cartIcon {
+            width: 68px;
+            padding: 0px 11px 0px 0px;
+        }
+        .counter {
+            left: -.4em;
+        }
+        .bannerContainer {
+            background: linear-gradient(rgba(13, 0, 11, 0.3), rgba(42, 0, 11, 0.3)), url(../images/banner-girl.png) no-repeat center 40px, url(../images/flower-bkgd.jpg) center repeat-x;
+            background-size: cover, auto 640px, auto 548px;
+            height: 550px;
+        }
+        .flickity-page-dots .dot {
+            margin: -43px 8px;
+        }
+        /*---------- product section /labtob/------------*/
+        .product-slider li {
+            width: 25%;
+        }
+        /*---------- regester section /labtob/------------*/
+        .regester {
+            height: 360px;
         }
     }
